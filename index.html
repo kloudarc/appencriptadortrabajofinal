@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alura - Encriptador de Texto</h1>
+        <p>Bienvenido al sistema</p>
+        <div class="row">
+            <div class="column">
+                <label for="inputText">Texto a encriptar:</label>
+                <input type="text" id="inputText" placeholder="Escribe tu texto">
+                <button onclick="encryptText()">¡Encriptar!</button>
+            </div>
+            <div class="column">
+                <label for="encryptedText">Texto encriptado:</label>
+                <textarea id="encryptedText" rows="4" cols="50"></textarea>
+                <button onclick="decryptText()">¡Desencriptar!</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="decryptedText">Texto desencriptado:</label>
+                <textarea id="decryptedText" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
